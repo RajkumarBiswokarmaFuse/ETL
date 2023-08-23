@@ -15,8 +15,7 @@ With an ELT approach, a data extraction tool is used to obtain data from a sourc
 
 # ETL VS ELT
 
-| Category   | ETL | | ELT | 
-| -------- | ------- |----- |
-|   | $250    | |
-| February | $80     | |
-| March    | $420    | |
+| Category | ETL | ELT |
+| -------  | ------| ------- |
+| Stands for |Extract, transform, and load   | Extract, load, and transform |
+
