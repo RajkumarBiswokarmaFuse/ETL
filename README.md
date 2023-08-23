@@ -44,3 +44,45 @@ Internet of Things (IoT) applications that use sensor data streams often benefit
 * to cleanse, deduplicate, or fill missing time series data elements
 
 
+# Comparison between Lambda and Glue, and when to use them?
+
+Lambda and Glue are both services offered by Amazon Web Services (AWS) that are used for data processing and transformation tasks, but they have different focuses and use cases. Let's compare Lambda and Glue and explore when to use each of them:
+
+## AWS Lambda:
+
+    Functionality: AWS Lambda is a serverless compute service that allows you to run code in response to events without provisioning or managing servers. It's designed for executing small, event-driven functions in a variety of programming languages.
+
+    Use Cases:
+        * Microservices: Lambda is great for building microservices architecture where each function performs a specific task.
+        * Event-Driven Processing: It's ideal for processing events such as data uploads, incoming messages, or triggers from other AWS services.
+      * Real-Time Processing: Lambda can handle real-time processing of data as it comes in.
+        * Custom Data Transformations: If  needed to perform specific data transformations that don't fit into the capabilities of AWS Glue, Lambda can be a more customizable solution.
+
+    * Scalability: Lambda functions automatically scale based on the incoming workload, allowing you to handle varying processing demands seamlessly.
+
+   * Languages: Lambda supports multiple programming languages, allowing developers to choose the language they are comfortable with.
+
+# AWS Glue:
+
+    Functionality: AWS Glue is a managed Extract, Transform, Load (ETL) service designed to make it easy to prepare and load data for analytics. It provides data cataloging, data transformation, and data loading capabilities.
+
+    Use Cases:
+       * ETL Pipelines: Glue is well-suited for building ETL pipelines to extract data from various sources, transform it into the desired format, and load it into data warehouses or data lakes.
+      * Data Cataloging: Glue's data cataloging capabilities help in discovering and understanding data from various sources in a centralized manner.
+       * Automated Schema Evolution: Glue can help manage changes in data schema over time, ensuring compatibility between different versions of data.
+       * Data Cleansing and Enrichment: It's suitable for performing data cleansing, validation, and enrichment as part of the ETL process.
+
+   * Managed Service: Glue is a fully managed service that abstracts much of the underlying infrastructure management, making it easier to set up and use for ETL tasks.
+
+   * Scalability: Glue can automatically scale resources to handle larger data volumes and processing demands.
+
+   *  Data Catalog: Glue includes a data catalog that helps organize metadata, making it easier to understand and access different datasets.
+
+# When to Use Each:
+
+  *  Use AWS Lambda When: You need to execute small, event-driven functions in response to specific events. It's suitable for real-time processing, custom transformations, and building microservices.
+
+  *  Use AWS Glue When: You need to build comprehensive ETL pipelines for data transformation, data cataloging, and loading data into data warehouses or data lakes. It's ideal for managing larger-scale data integration and preparation tasks.
+
+In many scenarios, Lambda and Glue can complement each other. For example, you might use Lambda to perform custom real-time data transformations and use Glue for the more complex and organized ETL processes involving data cataloging, transformation, and loading.
+
