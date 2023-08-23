@@ -20,6 +20,8 @@ With an ELT approach, a data extraction tool is used to obtain data from a sourc
 | Stands for |Extract, transform, and load   | Extract, load, and transform |
 |	Process | Takes raw data, transforms it into a predetermined format, then loads it into the target data warehouse|Takes raw data, loads it into the target data warehouse, then transforms it just before analytics|
 |Data compatibility|Best with structured data|Can handle structured, unstructured, and semi-structured data|
-
+|Speed|ETL is slower than ELT|ELT is faster than ETL as it can use the internal resources of the data warehouse|
+|Costs|Can be time-consuming and costly to set up depending on ETL tools used|More cost-efficient depending on the ELT infrastructure used|
+|Security|May require building custom applications to meet data protection requirements|You can use built-in features of the target database to manage data protection|
 
 
