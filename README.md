@@ -18,4 +18,8 @@ With an ELT approach, a data extraction tool is used to obtain data from a sourc
 | Category | ETL | ELT |
 | -------  | ------| ------- |
 | Stands for |Extract, transform, and load   | Extract, load, and transform |
+|	Process | Takes raw data, transforms it into a predetermined format, then loads it into the target data warehouse|Takes raw data, loads it into the target data warehouse, then transforms it just before analytics|
+
+
+
 
